@@ -485,12 +485,12 @@ function videogallery_cm_info_dynamic($coursemodule) {
             
             $output .= html_writer::tag('div', '', array('class' => 'videogallery_bottom_clearfix'));
             
-            $output .= html_writer::tag('a', '', array('id' => 'textos'));
-            $output .= html_writer::start_tag('div', array('class' => 'separador_semanal'));
-                $output .= html_writer::tag('div', 'Textos', array('class' => 'separador_semanal_type'));
-                $output .= html_writer::tag('div', '', array('class' => 'separador_barra'));
-                $output .= html_writer::link('#videos', 'Ir para vídeos');
-            $output .= html_writer::end_tag('div');
+            // $output .= html_writer::tag('a', '', array('id' => 'textos'));
+            // $output .= html_writer::start_tag('div', array('class' => 'separador_semanal'));
+            //     $output .= html_writer::tag('div', 'Textos', array('class' => 'separador_semanal_type'));
+            //     $output .= html_writer::tag('div', '', array('class' => 'separador_barra'));
+            //     $output .= html_writer::link('#videos', 'Ir para vídeos');
+            // $output .= html_writer::end_tag('div');
             
             $output .= html_writer::tag('div', '', array('class' => 'videogallery_bottom_clearfix'));
         }
@@ -566,7 +566,6 @@ function videogallery_get_recent_mod_activity(&$activities, &$index, $timestart,
 
 /**
  * Prints single activity item prepared by {@see videogallery_get_recent_mod_activity()}
-
  * @return void
  */
 function videogallery_print_recent_mod_activity($activity, $courseid, $detail, $modnames, $viewfullnames) {
