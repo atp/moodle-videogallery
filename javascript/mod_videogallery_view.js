@@ -46,7 +46,7 @@ $(document).ready(function() {
 		
 	$.ajax({
 		type: "POST",
-		url: "../videogallery/note.php",
+		url: "../mod/videogallery/note.php",
 		data: {request: 2, conteudo: video_id},
 		success: function(msg) {
 			$(".video_notes_view_textarea").html(msg);
@@ -62,7 +62,7 @@ $(document).ready(function() {
 					
 		$.ajax({
 			type: "POST",
-			url: "../videogallery/note.php",
+			url: "../mod/videogallery/note.php",
 			data: {request: 1, conteudo: video_id, note: note},
 			success: function(msg) {
 				$(".ajax_notification").css("background-color", "#0d610d");

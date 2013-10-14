@@ -3,6 +3,8 @@
  */
 $(document).ready(function() {
 
+	/*ATP-helbertds: fix jquery load twice (theme + mod_videogallery). Error Jquery Modal.*/
+	jQuery.noConflict();
 	
 	$('.next_video_thumb_desktop').click(function(e) {
 		
@@ -64,7 +66,7 @@ $(document).ready(function() {
 			$.ajax({
 				type: "POST",
 				//url: "../mod/videogallery/note.php",
-				url: "../mod/video/note.php",
+				url: "../mod/videogallery/note.php",
 				//data: {request: 2, video_id: video_id},
 				data: {request: 2, conteudo: video_weekid},
 				success: function(msg) {
@@ -136,7 +138,7 @@ $(document).ready(function() {
 			$.ajax({
 				type: "POST",
 				//url: "../mod/videogallery/note.php",
-				url: "../mod/video/note.php",
+				url: "../mod/videogallery/note.php",
 				//data: {request: 2, video_id: video_id},
 				data: {request: 2, conteudo: video_weekid},
 				success: function(msg) {
@@ -158,7 +160,7 @@ $(document).ready(function() {
 		$.ajax({
 			type: "POST",
 			//url: "../mod/videogallery/note.php",
-			url: "../mod/video/note.php",
+			url: "../mod/videogallery/note.php",
 			//data: {request: 1, video_id: video_id, note: note},
 			data: {request: 1, conteudo: video_weekid, note: note},
 			success: function(msg) {

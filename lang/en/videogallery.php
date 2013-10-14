@@ -53,3 +53,6 @@ $string['videogallerywatchlibras'] = 'Link LIBRAS';
 $string['videogallerydownloadlibras'] = 'Link LIBRAS download';
 $string['videogallerysubtitle'] = 'Legenda';
 $string['videogalleryweekid'] = 'ID do recurso';
+
+$string['allnotes'] = 'Visualizar Anotações';
+$string['question'] = 'Questão';

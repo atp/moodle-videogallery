@@ -467,9 +467,9 @@ function videogallery_cm_info_dynamic($coursemodule) {
                             $output .= html_writer::tag('textarea', '', array('title'=>'Anotações', 'class'=>'notetextarea annotation_input'.$video->id));
                             $output .= html_writer::start_tag('div', array('class'=>'inner_buttons_wrapper'));
                                 $output .= html_writer::empty_tag('input', array('type'=>'button', 'value'=>'Salvar', 'class'=>'inner_notes_save', 'video_id'=>$video->id, 'video_weekid'=>$video->weekid));
-                                $currentvideo = $DB->get_record('video', array('weekid'=>$video->weekid), '*');
-                                $output .= html_writer::link($CFG->wwwroot.'/mod/video/index.php', get_string('allnotes', 'video'), array('class'=>'inner_notes_allnotes'));
-                                $output .= html_writer::link($CFG->wwwroot.'/mod/video/view.php?id='.$currentvideo->coursemodule, get_string('question', 'video'), array('class'=>'inner_notes_window'));
+                                $currentvideo = $DB->get_record('videogallery_video', array('weekid'=>$video->weekid), '*');
+                                $output .= html_writer::link($CFG->wwwroot.'/mod/videogallery/index.php', get_string('allnotes', 'videogallery'), array('class'=>'inner_notes_allnotes'));
+                                $output .= html_writer::link($CFG->wwwroot.'/mod/videogallery/view.php?id='.$currentvideo->coursemodule, get_string('question', 'videogallery'), array('class'=>'inner_notes_window'));
                             $output .= html_writer::end_tag('div');
                         $output .= html_writer::end_tag('div');
                         //Buttons
